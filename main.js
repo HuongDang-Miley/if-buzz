@@ -1,10 +1,85 @@
 /*******************************************************************************
  * Your code here!
  ******************************************************************************/
+// const userInput = getInput(0)
+
+// function divisible() {
+//   if (userInput % 3 === 0 && userInput % 5 === 0 ) {
+//   return 'FizzBuzz'
+// } else if (userInput % 3 === 0) {
+//     return 'Fizz'
+// } else if (userInput % 5 === 0) {
+//     return 'Buzz'
+// } return userInput}  
 
 
+// let printResult = divisible() 
+// console.log(printResult);
+
+//=================Stretch Goal 1: when there are 3 inputs ======================
+
+// const userInput = getInput(0)
+// const firstNumber = getInput(1)
+// const secondNumber = getInput(2)
+
+// function divisible() {
+//   if (userInput % firstNumber === 0 && userInput % secondNumber === 0 ) {
+//   return 'FizzBuzz'
+// } else if (userInput % firstNumber === 0) {
+//     return 'Fizz'
+// } else if (userInput % secondNumber === 0) {
+//     return 'Buzz'
+// } return userInput}  
+
+// let printResult = divisible() 
+// console.log(printResult);
 
 
+//=================Stretch Goal 2 : Reset to default if user put only 1 number ======================
+
+//Step1: store 3 input into 3 variables
+const userInput = getInput(0)
+const firstNumber = getInput(1)
+const secondNumber = getInput(2)
+
+//Step2: Function print result when there are 3 inputs
+
+function firstDivisibleBySecondNThird() {
+  if (userInput % firstNumber === 0 && userInput % secondNumber === 0 ) {
+      return 'FizzBuzz'
+    } else if (userInput % firstNumber === 0) {
+        return 'Fizz'
+    } else if (userInput % secondNumber === 0) {
+        return 'Buzz'
+    } return userInput
+}
+
+let printFirstDivisibleBySecondNThird = firstDivisibleBySecondNThird();
+
+//Step3: Function print result when there's only 1 input
+
+function divisibleBy3And5() {
+  if (userInput % 3 === 0 && userInput % 5 === 0 ) {
+      return 'FizzBuzz'
+    } else if (userInput % 3 === 0) {
+        return 'Fizz'
+    } else if (userInput % 5 === 0) {
+        return 'Buzz'
+    } return userInput 
+}
+
+let printDivisibleBy3And5 = divisibleBy3And5()
+
+//Step4: Combine two functions above
+
+function combineFunctions(){
+  if (firstNumber === undefined && secondNumber === undefined ) {
+    return printDivisibleBy3And5; 
+  } return printFirstDivisibleBySecondNThird 
+}
+
+let printResult = combineFunctions() 
+console.log(printResult);
 
 /*******************************************************************************
   The below helper function will return an argument the user used when launching
