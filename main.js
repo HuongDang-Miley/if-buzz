@@ -1,6 +1,7 @@
 /*******************************************************************************
  * Your code here!
  ******************************************************************************/
+
 // const userInput = getInput(0)
 
 // function divisible() {
@@ -12,9 +13,10 @@
 //     return 'Buzz'
 // } return userInput}  
 
-
 // let printResult = divisible() 
 // console.log(printResult);
+
+
 
 //=================Stretch Goal 1: when there are 3 inputs ======================
 
@@ -33,6 +35,7 @@
 
 // let printResult = divisible() 
 // console.log(printResult);
+
 
 
 //=================Stretch Goal 2 : Reset to default if user put only 1 number ======================
@@ -80,6 +83,8 @@ function combineFunctions(){
 
 let printResult = combineFunctions() 
 console.log(printResult);
+
+
 
 /*******************************************************************************
   The below helper function will return an argument the user used when launching
